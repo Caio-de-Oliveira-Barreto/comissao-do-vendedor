@@ -16,19 +16,20 @@ public class Main {
 
         //receber valor da peça
         System.out.print("Digite o valor da peça: ");
-        double precoPeca = scanner.nextDouble();                   // tramento de erro para digitar apenas numeros
-
+        double precoPeca = scanner.nextDouble();                   
 
         // rebecer a quantidade de peças vendidas
-        System.out.print("Digite a quantidade de peças vendidas: ");              // tramento de erro para digitar apenas numeros
+        System.out.print("Digite a quantidade de peças vendidas: ");              
         int quantidadeVendida = scanner.nextInt();
 
         // fechando o scanner
         scanner.close();
 
+        // calculos para ver comissao e total da venda
         double valorTotalDaVenda = precoPeca * quantidadeVendida;
         double comissao = 0.05 * valorTotalDaVenda;
 
+        // mostrar informações do vendedor com sua comissão, etc. 
         System.out.println("Vendedor: " + nomeVendedor);
         System.out.println("Código da peça: " + codigoPeca);
         System.out.println("Valor da peça: " + precoPeca);
